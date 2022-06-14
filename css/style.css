@@ -1,0 +1,170 @@
+:root {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #000000 0%, #2d3436 74%);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2.4rem;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+header a {
+  font-family: "Sarala", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+main {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #ffffff;
+  padding: 2.0rem;
+}
+
+main .primaryContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .primaryContentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+
+main h1 {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 6.4rem;
+  color: #ffffff;
+}
+
+main h2 {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #b8b8b8;
+}
+
+main .primaryContentButton {
+  background-color: #4891d3;
+  width: 18.5rem;
+  height: 6.7rem;
+  border: none;
+  -webkit-box-shadow: 4px 5px 4px #2d3436;
+          box-shadow: 4px 5px 4px #2d3436;
+  border-radius: 20px;
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
+}
+
+main .primaryContentButton:hover {
+  background-color: #57b7eb;
+}
+
+main img {
+  height: 53.0rem;
+  padding-right: 25.0rem;
+  padding-top: 3.0rem;
+}
+
+main .secondaryContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4.8rem;
+}
+
+main h3 {
+  border-top: 0.04rem solid #ffffff;
+  padding-top: 4.8rem;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+
+main p {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #b8b8b8;
+}
+
+footer {
+  padding: 3.2rem;
+  border-top: 0.04rem solid #ffffff;
+}
+
+footer img {
+  height: 4.8rem;
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

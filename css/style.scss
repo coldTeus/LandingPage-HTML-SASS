@@ -1,0 +1,113 @@
+@import './builds/variables';
+@import './builds/mixins';
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  @include resetCSS();
+}
+
+body {
+  @include bodyReset();
+  @include gradientBlack();
+}
+header {
+  @include flexRow();
+  padding: 2.4rem;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  nav {
+    display: flex;
+    gap: 32px;
+  }
+
+  a {
+    font-family: $fontSarala;
+    color: $colorWhite;
+    font-weight: $weight400;
+    font-size: $fontSize18;
+  }
+
+}
+
+main {
+  margin-bottom: 48px;
+  border-top: 0.4px solid $colorWhite;
+  padding: 2.0rem;
+
+  .primaryContent {
+    @include flexRow();
+  }
+
+  .primaryContentDiv {
+    @include flexColumn();
+  }
+
+  h1 {
+    font-family: $fontRighteous;
+    font-weight: $weight400;
+    font-size: 6.4rem;
+    color: $colorWhite;
+  }
+
+  h2 {
+    font-family: $fontSarala;
+    font-weight: $weight400;
+    font-size: $fontSize24;
+    color: $colorGray;
+  }
+
+  .primaryContentButton {
+    @include buttonStyle();
+  }
+  
+  .primaryContentButton:hover {
+    @include buttonHover();
+  }
+
+  img {
+    height: 53.0rem;
+    padding-right: 25.0rem;
+    padding-top: 3.0rem;
+  }
+
+  .secondaryContent {
+    @include flexColumn();
+    align-items: center;
+    margin-top: 4.8rem;
+  }
+
+  h3 {
+    border-top: 0.04rem solid $colorWhite;
+    padding-top: 4.8rem;
+    font-family: $fontRighteous;
+    font-weight: $weight400;
+    font-size: $fontSize24;
+    color: $colorWhite;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    font-family: $fontSarala;
+    font-weight: $weight400;
+    font-size: $fontSize24;
+    color: $colorGray;
+  }
+}
+
+footer {
+  padding: 3.2rem;
+  border-top: 0.04rem solid $colorWhite;
+
+  img {
+    height: 4.8rem;
+    display: block;
+    margin: 0 auto;
+  }
+}

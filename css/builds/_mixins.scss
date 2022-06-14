@@ -1,0 +1,47 @@
+@mixin resetCSS {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@mixin bodyReset() {
+  font-size: 100%;
+}
+
+@mixin gradientBlack() {
+  background-color: $colorBlueGray;
+  background-image: $backgroundGradient;
+}
+
+@mixin flexRow() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin flexColumn() {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@mixin buttonStyle() {
+  background-color: $colorSkyBlue;
+  width: 18.5rem;
+  height: 6.7rem;
+  border: none;
+  box-shadow: 4px 5px 4px $colorBlueGray;
+  border-radius: 20px;
+  font-family: $fontSarala;
+  font-weight: $weight400;
+  font-size: $fontSize18;
+  color: $colorWhite;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out;
+}
+
+@mixin buttonHover () {
+  background-color: $colorWaterBlue;
+}
